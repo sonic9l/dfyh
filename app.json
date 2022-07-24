@@ -1,0 +1,88 @@
+{
+    "name": "KETO",
+    "logo": "https://telegra.ph/file/1419d0015ff39ce626cce.jpg",
+    "description": "UFO Music Voice Chat.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/Srd8/telethon-keto",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "حط سترنك!",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "توكــن بوتـــك !",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "إســـم بوتــك !.",
+            "required": false,
+            "value": "https://telegra.ph/file/1419d0015ff39ce626cce.jpg"
+        },
+        "BOT_USERNAME": {
+            "description": "يوزر نيــم بوتــك منغيــر -> @",
+            "required": true,
+            "value": "kiiieto_BOT"
+        },
+        "ASSISTANT_NAME": {
+            "description": "يوزر نيــم حساب المساعد",
+            "required": true,
+            "value": "iOm3y"
+        },
+        "BG_IMAGE": {
+            "description": "خلــفية",
+            "required": false,
+            "value": "https://telegra.ph/file/1419d0015ff39ce626cce.jpg"
+        },
+        "THUMB_IMG": {
+            "description": "سيبــها زي مهي عادي يبا -> bg_image",
+            "required": false,
+            "value": ""
+        },
+        "OWNER_NAME": {
+            "description": "حط يوزركـــ منغــير -> @",
+            "required": false,
+            "value": "iOm3y"
+        },
+        "API_ID": {
+            "description": "حــط App ID from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "حــط Api hash from my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ايدي المطور",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "max",
+            "required": true,
+            "value": "60"
+        },
+        "PMPERMIT": {
+            "description": "سيــبها.",
+            "required": false,
+            "value": "ENABLE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "تحديثات سورس كيتو",
+            "required": false,
+            "value": "KETOBOT"
+        },
+        "GROUP_SUPPORT": {
+            "description": "جروبــ الدعــم",
+            "required": false,
+            "value": "ZEPD8"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/srd8/telethon-keto "
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
